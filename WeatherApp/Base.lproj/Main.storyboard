@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,81 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Istanbul" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bs5-cJ-ZxY">
+                                <rect key="frame" x="155" y="94" width="65" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rBl-Lt-aKL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <color key="backgroundColor" red="0.6250119516" green="0.7130046377" blue="0.94275027509999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oln-Bw-9bG">
+                                <rect key="frame" x="160" y="125" width="55" height="19"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunny" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vcu-QY-TW5">
+                                <rect key="frame" x="164.66666666666666" y="404" width="46" height="19"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8jo-oP-Rhr">
+                                <rect key="frame" x="168" y="453" width="39" height="41"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="01d" translatesAutoresizingMaskIntoConstraints="NO" id="BX8-4D-jZd">
+                                <rect key="frame" x="87.666666666666686" y="194" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="YlO-bx-auJ"/>
+                                    <constraint firstAttribute="height" constant="200" id="cCh-VE-R51"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BX8-4D-jZd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1j4-ea-WbU"/>
+                            <constraint firstItem="Vcu-QY-TW5" firstAttribute="top" secondItem="BX8-4D-jZd" secondAttribute="bottom" constant="10" id="4zy-Z3-6mE"/>
+                            <constraint firstItem="8jo-oP-Rhr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EUU-4i-Iia"/>
+                            <constraint firstItem="bs5-cJ-ZxY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ifq-4B-z7h"/>
+                            <constraint firstAttribute="trailing" secondItem="rBl-Lt-aKL" secondAttribute="trailing" id="JpB-3D-JvZ"/>
+                            <constraint firstItem="Oln-Bw-9bG" firstAttribute="top" secondItem="bs5-cJ-ZxY" secondAttribute="bottom" constant="10" id="LfB-3f-fLd"/>
+                            <constraint firstItem="rBl-Lt-aKL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="LrY-wd-zD7"/>
+                            <constraint firstItem="rBl-Lt-aKL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ciC-kW-f3Q"/>
+                            <constraint firstItem="rBl-Lt-aKL" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="gyG-3F-OPr"/>
+                            <constraint firstItem="8jo-oP-Rhr" firstAttribute="top" secondItem="Vcu-QY-TW5" secondAttribute="bottom" constant="30" id="hDN-Uv-A6G"/>
+                            <constraint firstItem="Vcu-QY-TW5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iVZ-Jd-2iq"/>
+                            <constraint firstItem="BX8-4D-jZd" firstAttribute="top" secondItem="Oln-Bw-9bG" secondAttribute="bottom" constant="50" id="jq2-af-qn5"/>
+                            <constraint firstItem="Oln-Bw-9bG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nxP-U6-Fjg"/>
+                            <constraint firstItem="bs5-cJ-ZxY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="pF1-Lp-gcD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="rBl-Lt-aKL" id="o8n-ZP-aTD"/>
+                        <outlet property="conditionImageView" destination="BX8-4D-jZd" id="C16-hq-LQg"/>
+                        <outlet property="conditionLabel" destination="Vcu-QY-TW5" id="IQM-UR-bOq"/>
+                        <outlet property="dayLabel" destination="Oln-Bw-9bG" id="SdX-hg-d8M"/>
+                        <outlet property="locationLabel" destination="bs5-cJ-ZxY" id="Y1a-n1-d09"/>
+                        <outlet property="temperatureLabel" destination="8jo-oP-Rhr" id="jLS-Sz-w19"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.00492610837438"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="01d" width="409.60000610351562" height="409.60000610351562"/>
+    </resources>
 </document>
